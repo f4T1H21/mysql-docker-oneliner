@@ -1,5 +1,5 @@
 # MySQL Docker One-Liner
-This bash script pulls `mysql:latest` docker image if you don't have. Once you have mysql docker image with the `latest` tag, it runs two containers simultaneously where one of them as a MySQL server and the other as an interactive MySQL client which connects back to the server. After you `exit` MySQL, the client container will be killed and removed as well as the server container. Therefore __do not try to develop projects on both containers because they won't exist after you exit!__
+This bash script first pulls `mysql:latest` docker image if you don't have. Once you have the mysql docker image, it runs two different containers simultaneously where one of them as a MySQL server and the other as an interactive MySQL client which connects back to the server. After you `exit` MySQL, the client container will be killed and removed as well as the server container. Therefore __do not try to develop projects on both containers because they won't exist after you exit!__
 
 ## Use Side
 If you are working on database behaviours or learning MySQL and want containers and processes to be cleaned up automatically after the work, this one-liner script is definitely for you!
